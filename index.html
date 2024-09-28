@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <!-----------RemixIcon------------>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-----------swiper css------------>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!----------- css------------>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-----------Header------------>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li>
+            <a href="#home" class="nav__link active-link">Hello</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li>
+            <a href="#resume" class="nav__link">Resume</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="nav__link">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-fill"></i>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-fill"></i>
+      </div>
+    </nav>
+  </header>
+  <!------------MAIN----------->
+  <main class="main">
+    <!------------HOME----------->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <img src="./img/profile1.jpg" alt="" class="home__img">
+        <div class="home__data">
+          <h1 class="home__name">Abhi Rawat</h1>
+          <p class="home__work">Frontend developer</p>
+          <dl class="home__list">
+            <dt>AGE:</dt>
+            <dd>20</dd>
+            <dt>PHONE:</dt>
+            <dd>9311012975</dd>
+            <dt>EMAIL:</dt>
+            <dd>rawatab.hii2003@gmail.com</dd>
+            <dt>ADDRESS:</dt>
+            <dd>Dehradun, Nehrugram</dd>
+          </dl>
+          <div class="home__socials">
+            <a href="https://github.com/abhii23" target="_blank" class="home__social-link">
+              <i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abhi-rawat-91143922b/" target="_blank" class="home__social-link">
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------Hello------------>
+    <section class="hello section container">
+      <h2 class="section__title">Hi_</h2>
+      <p class="hello__details text-lg">
+        Hardworking and enthusiastic College Student working towards a Bachelor of Technology in Computer Science.
+        Seeking to use my superior knowledge
+        of Programming to effectively serve your company in an internship position. Dedicated, hardworking, and
+        committed to becoming a dependable and
+        valuable team member
+      </p>
+      <a href="img/abhi_resume.pdf" class="butto button--flex text-sm"><i class="ri-download-line"></i>DOWNLOAD CV</a>
+    </section>
+
+    <!-----------SERVICES------------>
+    <section class="services section container" id="skills">
+      <h2 class="section__title">Skills_</h2>
+      <div class="services__container grid">
+        <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/web-design.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">WEB DESIGN</h3>
+          <p class="services__detail">
+            Proficient in building responsive web applications using modern front-end technologies.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/laptop.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">Machine Learning</h3>
+          <p class="services__detail">
+            Experienced in developing and deploying machine learning models for various applications, leveraging popular
+            frameworks and libraries.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/operator.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">Google-Colab</h3>
+          <p class="services__detail">
+            Proficient in leveraging cloud-based notebook environments for data analysis, machine learning
+            experimentation, and collaborative research.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/paint-palette.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">Git</h3>
+          <p class="services__detail">
+            Skilled in version control and collaboration using Git, ensuring efficient team workflows and code
+            management.
+          </p>
+        </div>
+        <!-- <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/smartphone-call.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">Cloud Computing</h3>
+          <p class="services__detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum.
+          </p>
+        </div>
+        <div class="services__item">
+          <div class="icon__box">
+            <img src="img-dwn/verified.png" alt="" class="services__icon" />
+            <div class="services__dot">
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <h3 class="services__title text-lg">Devops</h3>
+          <p class="services__detail">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, earum.
+          </p>
+        </div>
+      </div> -->
+    </section>
+    <!-----------RESUME------------>
+    <section class="section container" id="resume">
+      <h2 class="section__title">Resume_</h2>
+
+      <div class="resume__container grid">
+        <div class="resume__data">
+          <h3 class="resume__title text-sm">EDUCATION</h3>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">Graphic Era Hill University</h3>
+            <p class="resume__data text-sm">2021-20205</p>
+            <p class="resume__description text-lg">Bachelor of Technology Computer Science Engineering</p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">KV Nsg Manesar</h3>
+            <p class="resume__data text-sm">2021</p>
+            <p class="resume__description text-lg">Physics, Chemistry, Maths, Computer Science, English, Physical
+              Education</p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">KV Nsg Manesar</h3>
+            <p class="resume__data text-sm">2019</p>
+            <p class="resume__description text-lg">Maths, Science, Social Science, Hindi, English</p>
+          </div>
+        </div>
+        <div class="resume__data">
+          <h3 class="resume__title text-sm">Projects_</h3>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">Soccer club website</h3>
+            <p class="resume__description text-sm">Developed a dynamic and user-friendly website for a soccer club.
+              Leveraged a combination of front-end and back-end technologies to ensure a seamless user experience.
+              Utilized HTML, CSS, and JavaScript for the front-end, and PHP with a MySQL database for the back-end.</p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">Presentation Control Using Hand Gestures </h3>
+            <p class="resume__description text-sm">Developed a presentation control system using hand gestures, enabling
+              presenters to navigate slides and interact with the audience seamlessly.</p>
+          </div>
+          <div class="resume__item">
+            <h3 class="resume__subtitle text-lg">Library Management System </h3>
+            <p class="resume__description text-sm">The Library Management System is a program in C++ that helps
+              librarians and students manage library tasks easily. It's like a virtual assistant for handling library
+              operations efficiently.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-----------Skills------------>
+    <section class="section container">
+      <h2 class="section__title">Skills_</h2>
+      <div class="skills__container grid">
+        <div class="skills__content">
+          <h3 class="skills__title text-sm">FRONTEND</h3>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">HTML</p>
+                <span class="skills__number text-sm">90%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:90% ">
+
+                </span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">CSS</p>
+                <span class="skills__number text-sm">80%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:80%">
+
+                </span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">JavaScript</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70%;">
+
+                </span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">React</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70%">
+
+                </span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">TypeScript</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70%;">
+
+                </span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Tailwind</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70%;">
+
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__content">
+          <h3 class="skills__title text-sm">BACKEND</h3>
+          <div class="skills__list grid">
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">PHP</p>
+                <span class="skills__number text-sm">90%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:90%">
+
+                </span>
+              </div>
+            </div>
+            <!-- <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Node Js</p>
+                <span class="skills__number text-sm">80%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:80%">
+
+                </span>
+              </div>
+            </div> -->
+            <!-- <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">Python</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70% ">
+
+                </span>
+              </div>
+            </div> -->
+            <div class="skills__data">
+              <div class="skills__titles">
+                <p class="skills__name text-sm">MySQL</p>
+                <span class="skills__number text-sm">70%</span>
+              </div>
+              <div class="skills__bar">
+                <span class="skills__percentage" style="width:70%">
+
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-----------Project------------>
+    <section class="work section container" id="portfolio">
+      <h2 class="section__title">Projects_</h2>
+      <div class="project__categories">
+        <button class="category__btn text-xs active-work" data-filter="all">ALL</button>
+        <button class="category__btn text-xs" data-filter=".app">Machine Learning</button>
+        <button class="category__btn text-xs" data-filter=".web">Web-Sites</button>
+        <button class="category__btn text-xs" data-filter=".software">Software</button>
+      </div>
+      <div class="projects__container grid">
+        <div class="project__item grid mix app">
+          <img src="img-dwn/ml1.jpeg" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Presentation Control Using Hand Gestures </h3>
+            <p class="project__description">Developed a presentation control system using hand gestures, enabling
+              presenters to navigate slides and interact with the audience seamlessly
+            </p>
+            <h4 class="project__stack text-xs">USED STACK:</h4>
+            <ul class="tags text-sm">
+              <li>Python</li>
+              <li>OpenCV (cv2)</li>
+              <li>PyAutoGUI</li>
+              <li>NumPy</li>
+              <li>cvzone</li>
+            </ul>
+            <a href="https://github.com/abhii23/presentation-control-using-hand-gesture" class="project__link text-sm">www.pchg.com</a>
+          </div>
+        </div>
+        <div class="project__item grid mix app">
+          <img src="img-dwn/ml2.jpeg" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Brain Tumour Detection</h3>
+            <p class="project__description">
+              Led the creation of an advanced deep learning setup and neural network structure for refining images and
+              training models comprehensively.
+            </p>
+            <h4 class="project__stack text-xs">USED STACK:</h4>
+            <ul class="tags text-sm">
+              <li>Python</li>
+              <li>Numpy</li>
+              <li>Transfer learning models</li>
+              <li>optimizer</li>
+            </ul>
+            <a href="" class="project__link text-sm">www.btd.com</a>
+          </div>
+
+        </div>
+
+
+
+        <div class="project__item grid mix web">
+          <img src="img-dwn/wb1.jpg" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">soccer club</h3>
+            <p class="project__description">
+              Built a user-friendly soccer club website using HTML, CSS, and JavaScript for the front-end, and PHP with
+              MySQL for the back-end.
+            </p>
+            <h4 class="project__stack text-xs">USED STACK:</h4>
+            <ul class="tags text-sm">
+              <li>html</li>
+              <li>css</li>
+              <li>js</li>
+              <li>php</li>
+              <li>my-sql</li>
+            </ul>
+            <a href="" class="project__link text-sm">www.app.com</a>
+          </div>
+
+        </div>
+        <div class="project__item grid mix web">
+          <img src="img-dwn/wb2.jpeg" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Cheatsheet</h3>
+            <p class="project__description">
+              Developed a concise C language cheat sheet using HTML and CSS for rapid reference and easy comprehension.
+            </p>
+            <h4 class="project__stack text-xs">USED STACK:</h4>
+            <ul class="tags text-sm">
+              <li>html</li>
+              <li>css</li>
+            </ul>
+            <a href="https://abhii23.github.io/cheatsheet/" class="project__link text-sm">www.cs.com</a>
+          </div>
+
+        </div>
+        <div class="project__item grid mix software">
+          <img src="img-dwn/sd1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title text-lg">Library management system</h3>
+            <p class="project__description">The Library Management System is a C++ console application designed to
+              efficiently manage the operations of a library. It provides a user-friendly interface to librarians and
+              students to handle various tasks, making the overall library management process more organized and
+              streamlined.
+            </p>
+            <h4 class="project__stack text-xs">USED STACK:</h4>
+            <ul class="tags text-sm">
+              <li>C++</li>
+              <li>oops</li>
+            </ul>
+            <a href="https://github.com/abhii23/library-management-system" class="project__link text-sm">www.lms.com</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-----------Testimonials------------>
+    <section class="testimonials section">
+      <div class="testimonial__bg">
+        <div class="testimonial__icon">
+          <i class="ri-double-quotes-l"></i>
+        </div>
+        <div class="swiper testimonial__container container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial__item">
+              <h3 class="author__name text-lg">Internship</h3>
+              <p class="author__project">Dehix (June 2024 - August 2024)</p>
+              <div class="ruler"></div>
+              <p class="testimonial__description text-lg">
+                Worked as a Front-End Developer to develop
+                and enhance user interfaces for Dehix, a blockchain-based talent verification platform
+              </p>
+              <a href="https://dehix.org/
+              " class="project__link text-sm">www.dehix.com</a>
+            </div>
+            <div class="swiper-slide testimonial__item">
+              <h3 class="author__name text-lg">Project</h3>
+              <p class="author__project">Companion (August 2024-Ongoing)</p>
+              <div class="ruler"></div>
+              <p class="testimonial__description text-lg">
+                COMPANION a web-site offers accessible mental health support and resources, fostering a safe space for individuals
+                seeking expert advice, community support, and well-being tools. Dedicated to promoting mental health for
+                a balanced, fulfilling life.
+              </p>
+            </div>
+            <!-- <div class="swiper-slide testimonial__item">
+              <h3 class="author__name text-lg">Abhi Rawat</h3>
+              <p class="author__project">yha project likho</p>
+              <div class="ruler"></div>
+              <p class="testimonial__description text-lg">
+                yha likho description os project ke bare m
+              </p>
+            </div> -->
+          </div>
+          <div class="swiper-button-next">
+            <img src="img-dwn/arrow-next.svg" alt="">
+          </div>
+          <div class="swiper-button-prev">
+            <img src="img-dwn/arrow-prev.svg" alt="">
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-----------Blog------------>
+    <!-----------Contact------------>
+    <section class="contact section" id="contact">
+      <div class="contact__content container">
+        <h2 class="section__title">Get in touch_</h2>
+        <div class="contact__container grid">
+          <div class="contact__info">
+            <dl class="contact__list">
+              <dt>Phone:</dt>
+              <dd>9311012975</dd>
+              <dt>Email:</dt>
+              <dd>rawatab.hii2003@gmail.com</dd>
+            </dl>
+            <ul class="contact__socials">
+              <li>
+                <a href="https://www.linkedin.com/in/abhi-rawat-91143922b/" class="contact__social-link">linkedin</a>
+              </li>
+              <li>
+                <a href="https://github.com/abhii23" class="contact__social-link">GitHub</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact__form">
+            <p class="contact__form-title">or just write me a letter here_
+            </p>
+            <form action="" id="contact-form">
+              <div class="contact__input-div">
+                <input type="text" name="name" placeholder="Your Name" id="contact-name" class="contact__input">
+              </div>
+              <div class="contact__input-div">
+                <input type="email" name="email" placeholder="Your e-mail" id="contact-email" class="contact__input">
+              </div>
+              <div class="contact__input-div">
+                <textarea placeholder="Type the message here" class="contact__input textarea" id="message"
+                  name="message" cols="30" rows="10">
+                </textarea>
+              </div>
+
+              <p class="contact__message text-sm" id="contact-message">
+                Message
+              </p>
+              <button type="submit" class="button contact__button">SEND</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-----------MixItUp------------>
+  <script src="mixitup.min.js"></script>
+  <!-----------Emailjs------------>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <!-----------Swiper js------------>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-----------JS------------>
+  <script src="main.js"></script>
+</body>
+
+</html>
